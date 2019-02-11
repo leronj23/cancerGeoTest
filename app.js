@@ -3,12 +3,12 @@ $(document).ready(function () {
     var savedCity = sessionStorage['savedCity'];
     var savedState = sessionStorage['savedState'];
 
-    console.log("savedCity",savedCity)
-    console.log("savedState",savedState)
+    console.log("savedCity",savedCity);
+    console.log("savedState",savedState);
 
     if (savedCity && savedState) {
 
-        displayLocation(savedCity, savedState)
+        displayLocation(savedCity, savedState);
     }
     else{
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
         getGeolocation(handleResponse);
 
         // Toggle API calls' async behavior. By default, async is true.
-        setAsync(true)
+        setAsync(true);
 
         // Function to handle response from IP Geolocation API
         function handleResponse(json) {
@@ -43,7 +43,7 @@ $(document).ready(function () {
                     sessionStorage['savedCity'] = city;
                     sessionStorage['savedState'] = state;
 
-                    displayLocation(city, state)
+                    displayLocation(city, state);
                 });
             }
         }
@@ -123,6 +123,6 @@ $(document).ready(function () {
 
     function getStateAbbr(name) {
         return states[name];
-    }
+    };
 
 });
