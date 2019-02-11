@@ -55,7 +55,7 @@ $(document).ready(function () {
 
         $("#geoBtn").click(function () {
 
-            window.location = `https://www.cancer.org/content/cancer/en/involved/event-search.listing.html?zip=&city=${city}&state=${state}&local-radius=10&textsrch=&startDate=02%2F11%2F2019&endDate=&categoryName=`;
+            window.location = `https://www.cancer.org/content/cancer/en/involved/event-search.listing.html?zip=&city=${city}&state=${state}&local-radius=100&textsrch=&startDate=02%2F11%2F2019&endDate=&categoryName=`;
         });
     }
 
